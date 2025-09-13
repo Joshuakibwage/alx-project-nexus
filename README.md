@@ -55,7 +55,7 @@ This journey wasn’t smooth sailing. I hit walls, got stuck, and doubted myself
   It’s frustrating when you want to integrate APIs but they’re not ready. I started using mock data and Postman, which made the final integration smoother.  
 
 - **Time management**  
-  Balancing milestones and learning new tools was tough. I had to set daily goals and use Trello + GitHub Projects to stay on track.  
+  Balancing milestones and learning new tools was tough. I had to set daily goals and use Notion to stay on track.  
 
 Every challenge stretched me — and taught me that **debugging, persistence, and asking for help** are just as important as writing code.  
 
