@@ -1,7 +1,11 @@
+import Hero from "@/components/hero/Hero";
+
+
 
 const Home = () => {
   return (
-    <div>
+    <div className="w-full h-screen">
+      <Hero />
       <h1>Home</h1>
     </div>
   )
