@@ -1,8 +1,10 @@
 "use client";
 import Link from "next/link";
-import { navLinks } from "@/contstants/page";
+import { navLinks } from "@/constants/page";
 import { usePathname } from "next/navigation";
 import SearchBar from "@/components/SearchBar";
+import Button from "@/components/Button";
+import ShoppingCartIcon from "@/components/ShoppingCartIcon";
 
 
 
@@ -42,12 +44,18 @@ const Navbar = () => {
                 </nav>
 
                 <div className="flex items-center gap-4">
-                    <div>
+                    <div className="flex gap-2 items-center">
                         <SearchBar />
-                        
+                        <Button
+                            label="Search"
+                    
+                            className="hidden sm:flex items-center gap-2 rounded-md ring-1 ring-gray-200 px-2 py-1 shadow-md cursor-pointer"
+                        />
                     </div>
                     
-                   
+                   <div>
+                       <ShoppingCartIcon />
+                   </div>
                 </div>
             </div>
             

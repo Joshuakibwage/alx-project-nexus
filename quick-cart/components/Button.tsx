@@ -1,9 +1,9 @@
 
 
 
-const Button = () => {
+const Button = ({className, label}) => {
     return (
-        <button className={className} onClick={onClick}>
+        <button className={className} >
             {label}
         </button>
     )
