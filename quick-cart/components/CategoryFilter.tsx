@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { setCategory } from '@/store/slices/filterSlice';
-import client from '../lib/apolloClient';
+import client from '@/lib/apolloClient';
 import { GET_CATEGORIES } from '@/lib/queries';
 
 const CategoryFilter = () => {
