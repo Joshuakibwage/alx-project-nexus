@@ -1,20 +1,32 @@
-import { Search } from "lucide-react"
+'use client';
 
-const SearchBar = () => {
+import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { setSearch } from '../store/slices/filterSlice';
+
+export default function SearchBar() {
+
+  const [value, setValue] = useState('');
+  const dispatch = useDispatch();
+
+  const handleSearch = () => {
+    dispatch(setSearch(value));
+  };
+
   return (
-    <div className='hidden sm:flex items-center gap-2 rounded-md ring-1 ring-gray-200 px-2 py-1 shadow-md'>
+    <div className="flex gap-2">
 
-        <Search 
-            className="w-4 h-4 text-gray-500"
-        />
-        
-        <input 
-            id="search" 
-            placeholder="Search..." 
-            className="text-sm outline-0"
-        />
+      <input
+        type="text"
+        placeholder="Search products..."
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
+        className="border rounded-lg px-3 py-1 w-full"
+      />
+      
+      <button onClick={handleSearch} className="bg-blue-500 text-white px-4 py-1 rounded-lg">
+        Search
+      </button>
     </div>
-  )
+  );
 }
-
-export default SearchBar
